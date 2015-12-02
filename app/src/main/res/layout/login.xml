@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="First time login"
+        android:id="@+id/headerLogin"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/logoLogin"
+        android:layout_alignEnd="@+id/logoLogin"
+        android:clickable="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mailText"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/headerLogin"
+        android:layout_alignStart="@+id/passwordText"
+        android:layout_alignEnd="@+id/passwordText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passwordText"
+        android:layout_below="@+id/mailText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/loginBut"
+        android:layout_marginTop="41dp"
+        android:layout_below="@+id/passwordText"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:id="@+id/logoLogin"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/loginBut"
+        android:src="@mipmap/studysmartlogo" />
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="University:"
+        android:id="@+id/headerHWC"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="288dp"
+        android:layout_alignEnd="@+id/dtuImage"
+        android:layout_marginTop="100dp" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/dtuImage"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/dtu"
+        android:layout_below="@+id/headerHWC"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/cbsImage"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/cbs"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/dtuImage"
+        android:layout_alignLeft="@+id/dtuImage"
+        android:layout_alignStart="@+id/dtuImage" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:id="@+id/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/studysmartlogo" />
+
+</RelativeLayout>
