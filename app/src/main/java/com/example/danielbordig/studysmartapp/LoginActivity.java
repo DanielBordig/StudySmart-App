@@ -41,6 +41,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         
         mail.setHint("Mail");
         password.setHint("Password");
+
+
+
     }
 
     @Override
